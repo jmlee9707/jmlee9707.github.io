@@ -49,6 +49,9 @@
 .fs-60 {
   font-size: vw(60px);
 }
+.fs-130 {
+  font-size: vw(130px);
+}
 /* 폰트 타이포 */
 .notoMid {
   font-family: "NotoSansMedium";
@@ -94,59 +97,6 @@
   font-family: "RobotoBold";
 }
 
-@media screen and (max-width: $TABLET-VW) {
-  .fs-10 {
-    font-size: vw-t(10px);
-  }
-  .fs-11 {
-    font-size: vw-t(11px);
-  }
-  .fs-12 {
-    font-size: vw-t(12px);
-  }
-  .fs-13 {
-    font-size: vw-t(13px);
-  }
-  .fs-14 {
-    font-size: vw-t(14px);
-  }
-  .fs-15 {
-    font-size: vw-t(15px);
-  }
-  .fs-16 {
-    font-size: vw-t(16px);
-  }
-  .fs-17 {
-    font-size: vw-t(17px);
-  }
-  .fs-18 {
-    font-size: vw-t(18px);
-  }
-  .fs-20 {
-    font-size: vw-t(20px);
-  }
-  .fs-22 {
-    font-size: vw-t(22px);
-  }
-  .fs-24 {
-    font-size: vw-t(24px);
-  }
-  .fs-28 {
-    font-size: vw-t(28px);
-  }
-  .fs-32 {
-    font-size: vw-t(32px);
-  }
-  .fs-36 {
-    font-size: vw-t(36px);
-  }
-  .fs-40 {
-    font-size: vw-t(40px);
-  }
-  .fs-60 {
-    font-size: vw-t(60px);
-  }
-}
 @media screen and (max-width: $PHONE-VW) {
   .fs-10 {
     font-size: vw-p(10px);

@@ -1,5 +1,5 @@
 #MainNavBar {
-  position: fixed;
+  position: relative;
 
   width: 100%;
   height: vw(100px);
@@ -19,9 +19,6 @@
       }
       .btn--active {
         text-decoration: underline;
-      }
-
-      .btn--unactive {
       }
     }
   }

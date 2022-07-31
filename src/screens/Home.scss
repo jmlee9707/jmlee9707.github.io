@@ -1,0 +1,12 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  &_text {
+    color: $GRAY-43;
+    margin-bottom: vw(100px);
+    &_name {
+      color: $MAIN;
+      margin: vw(30px) 0 vw(30px) 0;
+    }
+  }
+}
