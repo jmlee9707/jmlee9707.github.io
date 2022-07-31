@@ -1,0 +1,28 @@
+#MainNavBar {
+  position: fixed;
+
+  width: 100%;
+  height: vw(100px);
+
+  padding: vw(72px) 0 vw(15px) 0;
+
+  .nav-container {
+    width: 100%;
+
+    .nav-text {
+      color: $MAIN;
+
+      a {
+        margin: 0 vw(32px);
+        padding-bottom: vw(13px);
+        text-decoration: none;
+      }
+      .btn--active {
+        text-decoration: underline;
+      }
+
+      .btn--unactive {
+      }
+    }
+  }
+}
