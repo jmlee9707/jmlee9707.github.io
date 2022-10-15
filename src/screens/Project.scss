@@ -1,0 +1,27 @@
+.project {
+  //   background-color: red;
+
+  &_container {
+    width: 1000px;
+    margin-top: 200px;
+    &_icon {
+      width: 80px;
+      margin-bottom: 20px;
+      height: 80px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &_title {
+      color: $GRAY-43;
+      margin-bottom: 32px;
+    }
+  }
+  .line {
+    height: 1.5px;
+    width: 100%;
+    background-color: $GRAY-DB;
+  }
+}

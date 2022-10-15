@@ -3,8 +3,9 @@ import { Route, Routes } from "react-router-dom";
 import Home from "@screens/Home";
 import Who from "@screens/Who";
 import Project from "@screens/Project";
-import Concept from "@screens/Concept";
+import Education from "@screens/Education";
 import MainNavBar from "@components/common/MainNavBar";
+import Experience from "../screens/Experience";
 
 function Router() {
   return (
@@ -15,7 +16,8 @@ function Router() {
         <Route path="/" element={<Home />} />
         <Route path="/who" element={<Who />} />
         <Route path="/project" element={<Project />} />
-        <Route path="/concept" element={<Concept />} />
+        <Route path="/concept" element={<Experience />} />
+        <Route path="/edu" element={<Education />} />
       </Routes>
     </>
   );

@@ -1,0 +1,62 @@
+.card {
+  justify-content: space-between;
+  margin: 80px 0;
+  &_left {
+    width: 500px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &:hover {
+      scale: 102%;
+    }
+  }
+  &_right {
+    width: 450px;
+    &_title {
+      margin-bottom: 30px;
+      &_logo {
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        margin-right: 20px;
+      }
+    }
+    &_explain {
+      margin-bottom: 30px;
+      p {
+        line-height: 24px;
+        &:nth-child(2) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    &_skills,
+    &_period {
+      span {
+        margin-right: 12px;
+        color: $GRAY-3A;
+        line-height: 24px;
+      }
+    }
+    &_btn {
+      margin-top: 40px;
+      button {
+        border: 2px solid;
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin-right: 20px;
+        &:hover {
+          color: $WHITE;
+        }
+      }
+    }
+  }
+}

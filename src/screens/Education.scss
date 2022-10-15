@@ -1,0 +1,52 @@
+.edu {
+  //   background-color: red;
+  &_container {
+    width: 1000px;
+    margin-top: 200px;
+    &_icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &_box {
+      &_main {
+        color: $GRAY-43;
+        margin-bottom: 60px;
+      }
+      &_school,
+      &_learn {
+        margin-bottom: 60px;
+        &_txt {
+          justify-content: space-between;
+          &_left {
+            p {
+              &:nth-child(1) {
+                color: $GRAY-3A;
+                margin-bottom: 20px;
+              }
+              &:nth-child(2) {
+                font-style: italic;
+              }
+            }
+          }
+          &_right {
+            color: $GRAY-43;
+            width: 400px;
+            p {
+              line-height: 28px;
+              &:nth-child(1) {
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

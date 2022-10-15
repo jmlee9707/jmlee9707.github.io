@@ -1,6 +1,5 @@
 import React from "react";
 import "./Who.scss";
-// import { Link } from "react-router-dom";
 import profile from "../assets/images/profile.jpg";
 import icon from "../assets/images/who_icon.png";
 
@@ -10,12 +9,12 @@ function Who() {
     console.log("aa");
   };
   return (
-    <div className="who flex column justify-center">
+    <div className="who flex align-center column">
       <div className="who_contents flex column notoMid">
         <div className="who_contents_icon">
           <img src={icon} alt="icon" importance="high" />
         </div>
-        <div className="who_contents_box flex align-center">
+        <div className="who_contents_box flex">
           <div className="who_contents_box_left">
             <div className="who_contents_box_left_name notoBold fs-32">
               <p>안녕하세요,</p>

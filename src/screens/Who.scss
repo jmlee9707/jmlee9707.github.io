@@ -1,11 +1,15 @@
 .who {
-  height: 100vh;
+  //   height: 100vh;
+  //   width: 1024px;
   //   background-color: red;
-  margin: 0 60px;
+  //   margin: 0 60px;
   &_contents {
+    width: 1000px;
+    margin-top: 200px;
     &_icon {
       width: 80px;
       height: 80px;
+      margin-bottom: 40px;
       img {
         width: 100%;
         height: 100%;
@@ -14,13 +18,14 @@
     }
     &_box {
       justify-content: space-between;
+      align-items: flex-end;
       &_left {
-        margin-right: 4px;
+        margin-right: 40px;
         &_name {
           color: $GRAY-3A;
           margin-bottom: 40px;
           p {
-            margin-bottom: 8px;
+            margin-bottom: 12px;
           }
           span {
             color: $MAIN;
@@ -28,7 +33,7 @@
         }
         &_intro {
           p {
-            line-height: 20px;
+            line-height: 28px;
           }
           span {
             color: $MAIN;
@@ -50,8 +55,9 @@
       }
     }
     &_contracts {
+      margin-top: 50px;
       p:hover {
-        opacity: 0.8;
+        opacity: 0.6;
       }
       p {
         button {
