@@ -19,7 +19,7 @@ function MainNavBar() {
           </NavLink>
           <NavLink
             className={({ isActive }) => activeTabClassName(isActive)}
-            to="/whot"
+            to="/who"
           >
             WHO
           </NavLink>
@@ -31,9 +31,9 @@ function MainNavBar() {
           </NavLink>
           <NavLink
             className={({ isActive }) => activeTabClassName(isActive)}
-            to="/concept"
+            to="/experience"
           >
-            CONCEPT
+            EXPERIENCE
           </NavLink>
         </nav>
       </div>
