@@ -4,7 +4,6 @@ import "./MainNavBar.scss";
 
 function MainNavBar() {
   const { pathname } = useLocation();
-  console.log(pathname);
 
   const activeTabClassName = active => {
     const prefix = "nav-text__link fs-16 btn--";
