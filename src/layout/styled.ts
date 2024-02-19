@@ -8,16 +8,21 @@ export const Wrapper = styled.div`
   flex-direction: column;
   width: 100vw;
   min-height: 100vh;
-  /* height: fit-content; */
   word-break: keep-all;
   align-items: center;
+  /* padding-bottom: 56px; */
   background-color: ${({ theme }) => theme.color.white};
+  font-family: GmarketSansMedium;
+
 `;
 
 export const Content = styled.div`
   padding: 120px 10px 60px 10px;
   width: 100%;
-  height: 100%;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: ${contentMaxWidth};
-  background-color: red;
+  min-height : 100vh;
+  /* background-color : red; */
 `;

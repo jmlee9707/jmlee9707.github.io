@@ -39,7 +39,7 @@ const style = (theme: Theme) => css`
   }
 
   .mobile-only {
-    display: none;
+    display: none ;
     @media ${MOBILE_MEDIA_QUERY} {
       display: block;
     }

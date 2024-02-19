@@ -10,6 +10,7 @@ import { useContext } from 'react';
 
 import Header from '../components/header';
 import { ThemeManagerContext } from 'gatsby-emotion-dark-mode';
+import Footer from '../components/footer';
 
 
 type LayoutProps = {
@@ -33,13 +34,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
 
-      <ThemeProvider theme = {theme.isDark?darkTheme : lightTheme}>
+      <ThemeProvider theme = {theme.isDark? darkTheme : lightTheme}>
         <GlobalStyle/>
         <S.Wrapper>
           <Header title = {title}/>
           <S.Content>
             {children}
           </S.Content>
+          <Footer />
         </S.Wrapper>
       </ThemeProvider>
 

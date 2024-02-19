@@ -22,8 +22,9 @@ export const ContentsWrapper = styled.div`
 
 export const InfoSection = styled.div`
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 0px;
   display: flex;
+
   border-bottom: 1px solid #dbdbdb;
   font-size: 12px;
   line-height: 16px;
@@ -50,7 +51,7 @@ export const CopyBtn = styled.div`
 export const TitleSection = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 20px 1px;
   font-size: 16px;
 `;
 export const Title = styled(Link)`

@@ -9,10 +9,10 @@ type HeaderProps = {
 };
 
 const Menus = [
-  {
-    name: 'about',
-    path: '/about',
-  },
+  // {
+  //   name: 'about',
+  //   path: '/about',
+  // },
 
   {
     name: 'posts',
@@ -34,7 +34,7 @@ const Header: React.FC<HeaderProps> = ({ title}) => {
   return (
     <S.Wrapper>
       <S.ContentsWrapper>
-        <S.InfoSection>
+        <S.InfoSection className='pc-only'>
           <div>last updated : </div>
           <S.CopyBtn>
             <Link1Icon className="icon-link" />
