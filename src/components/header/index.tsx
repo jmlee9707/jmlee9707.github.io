@@ -5,7 +5,7 @@ import ToggleTheme from '../toggleTheme';
 
 type HeaderProps = {
   title: string;
-  location: Location;
+  location?: Location;
 };
 
 const Menus = [
@@ -28,8 +28,9 @@ const Menus = [
   //   },
 ];
 
-const Header: React.FC<HeaderProps> = ({ title, location }) => {
-  const pathname = location;
+const Header: React.FC<HeaderProps> = ({ title}) => {
+  // const pathname = location;
+
   return (
     <S.Wrapper>
       <S.ContentsWrapper>
@@ -39,13 +40,13 @@ const Header: React.FC<HeaderProps> = ({ title, location }) => {
             <Link1Icon className="icon-link" />
             <span>URL 복사</span>
           </S.CopyBtn>
-          {/* <ToggleTheme /> */}
+          <ToggleTheme />
         </S.InfoSection>
         <S.TitleSection>
           <S.Title to="/">{title}</S.Title>
           <S.MenuList>
             {Menus.map((el) => (
-              <S.MenuLink to={el.path} key={el.name} $selected={pathname === el.path}>
+              <S.MenuLink to={el.path} key={el.name} >
                 {el.name}
               </S.MenuLink>
             ))}

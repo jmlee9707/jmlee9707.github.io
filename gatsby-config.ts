@@ -1,8 +1,8 @@
 
-
-
 import type { GatsbyConfig } from 'gatsby';
 import siteMetadata from './gatsby-site-meta-data';
+
+import { darkTheme, lightTheme } from './src/styles/const';
 
 const config:GatsbyConfig = {
   siteMetadata,
@@ -14,6 +14,13 @@ const config:GatsbyConfig = {
       options: {
         isTSX: true,
         allExtensions: true,
+      },
+    },
+    {
+      resolve: `gatsby-emotion-dark-mode`,
+      options: {
+          light: lightTheme,
+          dark: darkTheme,
       },
     },
     // {

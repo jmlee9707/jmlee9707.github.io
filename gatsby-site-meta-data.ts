@@ -7,4 +7,5 @@ export default {
     name: `이정민`,
     nickname: `jenny`,
   },
+  siteUrl : 'https://jmlee9707.github.io/',
 };

@@ -63,7 +63,7 @@ export const MenuList = styled.div`
   gap: 16px;
 `;
 
-export const MenuLink = styled(Link)<{ $seleted: string }>`
+export const MenuLink = styled(Link)`
   color: ${({ theme }) => theme.color.black};
 
   &:hover {

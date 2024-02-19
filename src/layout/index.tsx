@@ -9,15 +9,16 @@ import { darkTheme, lightTheme } from '../styles/const';
 import { useContext } from 'react';
 
 import Header from '../components/header';
+import { ThemeManagerContext } from 'gatsby-emotion-dark-mode';
 
 
 type LayoutProps = {
-  location: Location;
+  location?: Location;
   children: React.ReactNode;
 };
 
-const Layout: React.FC<LayoutProps> = ({ location, children }) => {
-  // const theme = useContext(ThemeManagerContext);
+const Layout: React.FC<LayoutProps> = ({ children }) => {
+  const theme = useContext(ThemeManagerContext);
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -32,10 +33,10 @@ const Layout: React.FC<LayoutProps> = ({ location, children }) => {
 
   return (
 
-      <ThemeProvider theme = {lightTheme}>
+      <ThemeProvider theme = {theme.isDark?darkTheme : lightTheme}>
         <GlobalStyle/>
         <S.Wrapper>
-          <Header title = {title} location={location}/>
+          <Header title = {title}/>
           <S.Content>
             {children}
           </S.Content>

@@ -3,7 +3,7 @@ import Layout from "../layout";
 
 const Home = () => {
   return (
-    <Layout location={location}>
+    <Layout>
       <MainBanner />
     </Layout>
   );
