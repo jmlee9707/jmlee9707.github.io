@@ -3,42 +3,19 @@ import { Link } from "gatsby";
 
 export const Wrapper = styled.div`
     width : 100%;
+    /* background-color: blue; */
     display:  flex;
-    flex-direction: column;
     text-align: center;
     justify-content: center;
-
-`
-export const SelectedSection = styled.div`
-
-    padding : 30px 0;
-    width : 100%;
-    color: ${({ theme }) => theme.color.black};
-    
-    div{
-        &:first-child{
-            font-size : 22px;
-            font-weight: 700;
-            padding-bottom: 12px;
-        }
-        &:nth-child(2){
-            font-size : 18px;
-            font-family: GmarketSansLight;
-            font-weight: 400;
-        }
-    }
-
-`
-
-
-export const MainSection = styled.div`
-    width : 100%;
     padding : 10px 0;
     display: flex;
     justify-content: space-between;
     gap : 16px;
+    height : 100%;
 
 `
+
+
 export const Sidebar = styled.div`
     /* background-color: red; */
     width : 20%;
@@ -71,4 +48,6 @@ export const Articles = styled.div`
     justify-content : start;
     align-items: start;
     gap : 20px;
+    background-color: red;
+    height : 100%;
 `

@@ -10,7 +10,6 @@ export const Wrapper = styled.div`
   min-height: 100vh;
   word-break: keep-all;
   align-items: center;
-  /* padding-bottom: 56px; */
   background-color: ${({ theme }) => theme.color.white};
   font-family: GmarketSansMedium;
 
@@ -24,5 +23,4 @@ export const Content = styled.div`
   align-items: center;
   max-width: ${contentMaxWidth};
   min-height : 100vh;
-  /* background-color : red; */
 `;
